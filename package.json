@@ -1,0 +1,40 @@
+{
+  "name": "@ubt-global-software/rag-cli",
+  "version": "1.0.0",
+  "description": "Local-first two-stage RAG CLI (index + query) — BGE embeddings + reranker, SQLite/Qdrant/in-memory backends.",
+  "bin": {
+    "rag-cli": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UBT-global-software/rag-cli.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "esbuild src/cli.ts --bundle --platform=node --format=esm --packages=external --banner:js=\"#!/usr/bin/env node\" --outfile=dist/cli.mjs",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "index": "npm run build && node dist/cli.mjs index",
+    "query": "npm run build && node dist/cli.mjs query"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "@qdrant/js-client-rest": "^1.18.0",
+    "dotenv": "^17.2.3",
+    "mammoth": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.0.0"
+  }
+}
