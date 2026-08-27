@@ -1,8 +1,8 @@
 # Copy this to ~/.npmrc (global, recommended) or ./.npmrc (per-project),
-# fill in <TOKEN>, and you can `npm install -g @ubt-global-software/rag-cli`.
+# fill in <TOKEN>, and you can `npm install -g @simonpham268/rag-cli`.
 #
 # Token: create a classic PAT at https://github.com/settings/tokens
 # with scope `read:packages` (add `repo` too if this repo is private).
 
-@ubt-global-software:registry=https://npm.pkg.github.com
+@simonpham268:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=<TOKEN>

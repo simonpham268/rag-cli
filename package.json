@@ -1,5 +1,5 @@
 {
-  "name": "@ubt-global-software/rag-cli",
+  "name": "@simonpham268/rag-cli",
   "version": "1.0.0",
   "description": "Local-first two-stage RAG CLI (index + query) — BGE embeddings + reranker, SQLite/Qdrant/in-memory backends.",
   "bin": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UBT-global-software/rag-cli.git"
+    "url": "git+https://github.com/simonpham268/rag-cli.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

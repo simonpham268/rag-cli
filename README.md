@@ -14,7 +14,7 @@ it standalone, without depending on that repo.
 
 ## Install (team members)
 
-Packages are published to **GitHub Packages** under the `@ubt-global-software` scope,
+Packages are published to **GitHub Packages** under the `@simonpham268` scope,
 so `npm install` needs to know where to look and needs a token to read them (GitHub
 Packages requires auth even for public repos).
 
@@ -23,12 +23,12 @@ Packages requires auth even for public repos).
 2. Copy `.npmrc.example` to `~/.npmrc` (applies to all your projects) and fill in the
    token:
    ```
-   @ubt-global-software:registry=https://npm.pkg.github.com
+   @simonpham268:registry=https://npm.pkg.github.com
    //npm.pkg.github.com/:_authToken=<TOKEN>
    ```
 3. Install globally:
    ```bash
-   npm install -g @ubt-global-software/rag-cli
+   npm install -g @simonpham268/rag-cli
    ```
 
 ## Usage
@@ -59,7 +59,7 @@ key), rather than piling on top of them.
 ## Using as a library
 
 ```ts
-import { Embedder, SqliteStore, TwoStageRAG } from '@ubt-global-software/rag-cli';
+import { Embedder, SqliteStore, TwoStageRAG } from '@simonpham268/rag-cli';
 
 const embedder = await Embedder.create();
 const store = SqliteStore.create('my-collection');
