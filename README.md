@@ -1,4 +1,4 @@
-# @ubt-global-software/rag-cli
+# @rag-cli
 
 Local-first two-stage RAG (retrieve + rerank) as an installable CLI. Embeddings run
 locally via `@huggingface/transformers` (BGE models) — no external API keys needed.
